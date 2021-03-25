@@ -27,10 +27,13 @@ public class LineCompare {
 		int B2 = sc.nextInt();
 		int length = ((x2 - x1) ^ 2 + (y2 - y1) ^ 2);
 		int length2 = ((x2 - x1) ^ 2 + (y2 - y1) ^ 2);
-		if (length == length2) {
-		System.out.println("Both are equal");
-} else
-	System.out.println("Both are Not equal");
+		int result = Integer.compare(length, length2);
+		if (result == 0) {
+			System.out.println("Both are equal");
+		} else if (result >= 1) {
+			System.out.println("Line1 is greter than line 2");
+		} else if (result <= -1) {
+			System.out.println("Line1 is smaller than line 2");
+		}
 	}
-
 }
