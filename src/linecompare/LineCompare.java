@@ -26,13 +26,13 @@ public class LineCompare {
 		System.out.print("Enter B2 ");
 		int B2 = sc.nextInt();
 		int length = ((x2 - x1) ^ 2 + (y2 - y1) ^ 2);
-		int length2 = ((x2 - x1) ^ 2 + (y2 - y1) ^ 2);
-		int result = Integer.compare(length, length2);
-		if (result == 0) {
+		int length2 = ((A2 - A1) ^ 2 + (B2 - B1) ^ 2);
+		//Comapare Two Lines Here Whether That Are Gretter Smaller Or Equal
+		if (length == length2) {
 			System.out.println("Both are equal");
-		} else if (result >= 1) {
-			System.out.println("Line1 is greter than line 2");
-		} else if (result <= -1) {
+		} else if (length >= length2) {
+			System.out.println("Line1 is gretter than line 2");
+		} else if (length <= length2) {
 			System.out.println("Line1 is smaller than line 2");
 		}
 	}
