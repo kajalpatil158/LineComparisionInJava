@@ -18,8 +18,19 @@ public class LineCompare {
 		System.out.print("Enter y2 ");
 		int y2 = sc.nextInt();
 		System.out.print("Enter A1 ");
+		int A1 = sc.nextInt();
+		System.out.print("Enter A2 ");
+		int A2 = sc.nextInt();
+		System.out.print("Enter B1 ");
+		int B1 = sc.nextInt();
+		System.out.print("Enter B2 ");
+		int B2 = sc.nextInt();
 		int length = ((x2 - x1) ^ 2 + (y2 - y1) ^ 2);
-		System.out.println("Lengh of line is:" + Math.sqrt(length));
+		int length2 = ((x2 - x1) ^ 2 + (y2 - y1) ^ 2);
+		if (length == length2) {
+		System.out.println("Both are equal");
+} else
+	System.out.println("Both are Not equal");
 	}
 
 }
